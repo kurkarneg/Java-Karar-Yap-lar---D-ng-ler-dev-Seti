@@ -1,19 +1,26 @@
+package org.example;
+
 import java.util.Scanner;
 
-/** Soru 8: Tahmin Oyunu */
-public class Soru08_TahminOyunu {
-
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        // TODO: Girdileri alın
-
-        // TODO: Girdileri kontrol edin (hatalı giriş / sınır durumları)
-
-        // TODO: Karar yapısını ve/veya döngüyü yazın
-
-        // TODO: Sonucu ekrana yazdırın
-
-        scanner.close();
+        System.out.print("Bana bir sayi gir: ");
+        Scanner g = new Scanner(System.in);
+        int d = g.nextInt();
+        int k = 1234;
+        while(d != k){
+            if(d < k){
+                System.out.println("Girdiginiz sayi gizli sayidan kucuk");
+                System.out.print("Lutfen yeni bir sayi giriniz: ");
+                d = g.nextInt();
+            }else {
+                System.out.println("Girdiginiz sayi gizli sayidan buyuk");
+                System.out.print("Lutfen yeni bir sayi giriniz: ");
+                d = g.nextInt();
+            }
+        }
+        System.out.println("Tebrikler dogru bildiniz Gizli SAyi: " + k);
     }
 }
