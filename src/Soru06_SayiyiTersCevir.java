@@ -1,19 +1,12 @@
+package org.example;
+
 import java.util.Scanner;
 
-/** Soru 6: Sayıyı Ters Çevirme */
-public class Soru06_SayiyiTersCevir {
-
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        System.out.print("Yapamadim nasil ceivrecegimi bir turlu bulamadim aklima char kullanmak geldi ama nasil kullanacagimi bilmiyorum: ");
 
-        // TODO: Girdileri alın
-
-        // TODO: Girdileri kontrol edin (hatalı giriş / sınır durumları)
-
-        // TODO: Karar yapısını ve/veya döngüyü yazın
-
-        // TODO: Sonucu ekrana yazdırın
-
-        scanner.close();
     }
 }
