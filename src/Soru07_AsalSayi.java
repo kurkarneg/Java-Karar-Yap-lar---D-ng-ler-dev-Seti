@@ -1,19 +1,32 @@
+package org.example;
+
 import java.util.Scanner;
 
-/** Soru 7: Asal Sayı Kontrolü */
-public class Soru07_AsalSayi {
-
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        System.out.print("Bana bir sayi gir: ");
+        Scanner girdi = new Scanner(System.in);
+        int sayi = girdi.nextInt();
+        int i = 2;
+        boolean flag = true;
+        if(sayi == 2){
+            System.out.println("Sayi asaldir");
+        }else {
+            while (i < sayi) {
+                if (sayi % i == 0){
+                    flag = false;
+                    i++;
+                } else {
 
-        // TODO: Girdileri alın
-
-        // TODO: Girdileri kontrol edin (hatalı giriş / sınır durumları)
-
-        // TODO: Karar yapısını ve/veya döngüyü yazın
-
-        // TODO: Sonucu ekrana yazdırın
-
-        scanner.close();
+                    i++;
+                }
+            } if (flag == false) {
+                System.out.println("Sayi asal degildir");
+            } else {
+                System.out.println("Sayi asaldir");
+            }
+        }
     }
 }
