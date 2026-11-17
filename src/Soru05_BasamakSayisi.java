@@ -1,19 +1,18 @@
-import java.util.Scanner;
 
-/** Soru 5: Sayının Basamaklarını Bulma */
-public class Soru05_BasamakSayisi {
-
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bana bir sayi gir");
+        Scanner girdi = new Scanner(System.in);
+        int sayi = girdi.nextInt();
+        int kutu = 0;
+        while(sayi >= 10){
+            sayi = sayi/10;
+            kutu = kutu + 1;
+        }
+        kutu = kutu + 1;
+        System.out.println("Girdiginiz sayi " + kutu + " basamaklidir");
 
-        // TODO: Girdileri alın
-
-        // TODO: Girdileri kontrol edin (hatalı giriş / sınır durumları)
-
-        // TODO: Karar yapısını ve/veya döngüyü yazın
-
-        // TODO: Sonucu ekrana yazdırın
-
-        scanner.close();
     }
 }
